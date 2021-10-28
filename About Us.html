@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatoki</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/b44780b55c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <!-- section-top -->
+
+        <section id="top-bar">
+            <div class="row">
+                <div class="top-bar-col col1">
+                    <a href="#"><img src="Logo.png"></a>
+                </div>
+                <div class="top-bar-col col2">
+                    <a href="#"><img src="cambodia.png"></a>
+                    <a href="#"><img src="united-states.png"></a>
+                </div>
+                <div class="top-bar-col col3">
+                    <a href="#"><img src="facebook.png"></a>
+                    <a href="#"><img src="instagram.png"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- nav-bar-menu-->
+
+            <nav>                
+                <ul>
+                    <li>
+                        <a href="Index.html" class="a" ><i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="Drink.html" class="b">Drink</a>
+                    </li>
+                    <li>
+                        <a href="Shop.html" class="c">Shop</a>
+                    </li>
+                    <li>
+                        <a href="About Us.html" class="d active">About Us</a>
+                    </li>
+                    <li>
+                        <a href="Contact Us.html" class="e">Contact Us</a>
+                    </li>
+                </ul>
+
+                <i  id="fa" class="fa fa-bars" onclick="myfuntion()"></i>  
+            </nav>
+
+        <!-- About Us -->
+
+            <section id="About-Us">
+                <h1>About Us</h1>
+            </section>
+
+        <!-- section-details -->
+
+            <section id="details">
+                <div class="container">
+                    <h2>Value <br>
+                        To be innovative and pragmatic</h2>
+                    <div class="row">
+                        <div class="col-details">
+                            <img src="about-us1.jpeg">
+                        </div>
+                        <div class="col-details">
+                            <div class="details-text">
+                                <strong>Mission</strong>
+                                <p>-To provide perfect, delicious tea, products and excellent, reliable service to our customers. <br>
+                                -To set and maintain the highest standard of quality and ethics in everything we do.</p>
+
+                                <p>-85% imported Japanese tea; 15% others e.g. coffee & premium tea around the world. Emphasize on creating customer experience.</p>    
+
+                                <p>
+                                -Colorful layered drinks for our product. Hand-whisked upon customer order 100% natural ingredient, No preservative, No artificial food coloring.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-details">
+                            <img src="about-us2.jpeg">
+                        </div>
+                        <div class="col-details">
+                            <div class="details-text">
+                                <strong>Vission</strong>
+                                <p>
+                                    -To be a leader in innovation, service and quality
+                                </p>
+
+                                <p>-CHATOKI is a Japanese owned lifestyle tea shop. we studied the art of Japanese tea making with a tea master in Nishio.</p>    
+
+                                <p>
+                                    -CHATOKI revolutionalised Japanese tea drinking by creating a vision of sharing this culture in a modern tea shop environment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- section-footer -->
+
+        <section id="footer">
+            <img src="facebook.png" alt="" height="40">
+            <img src="instagram.png" alt="" height="40">
+            <p class="footer mt-3">
+                Made by &#9825; Kokleng
+            </p>
+        </section> 
+
+
+
+
+
+        <script>
+                var fa = document.querySelector('#fa');
+
+                var id = 1;
+                function myfuntion(){
+                    if(id == 1)
+                    {
+                        fa.classList.replace('fa-bars', 'fa-times');
+                    
+                        document.querySelector('.a').style.display ="block";
+                        document.querySelector('.b').style.display ="block";
+                        document.querySelector('.c').style.display ="block";
+                        document.querySelector('.d').style.display ="block";
+                        document.querySelector('.e').style.display ="block";
+
+                        id = 0;
+                    }
+                    else{
+
+                        fa.classList.replace('fa-times', 'fa-bars');
+
+                        document.querySelector('.a').style.display ="none";
+                        document.querySelector('.b').style.display ="none";
+                        document.querySelector('.c').style.display ="none";
+                        document.querySelector('.d').style.display ="none";
+                        document.querySelector('.e').style.display ="none";
+
+                        id = 1;
+                    }
+                }
+                
+        </script>
+</body>
+</html>
